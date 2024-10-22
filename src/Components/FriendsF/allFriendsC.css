@@ -1,0 +1,21 @@
+.all-friends-child-second-div
+{
+    background-color: lightgray;
+    padding: 10px;
+    margin: 30px 0px;
+    border-radius: 10px;
+
+}
+.all-friends-child-main-div{
+margin: 0 auto;
+width: 40%;
+
+}
+.all-friends-child-second-div a{
+    text-decoration: none;
+    color: black;
+}
+.all-friends-child-second-div a:hover{
+    text-decoration: underline;
+    color:blue;
+}
