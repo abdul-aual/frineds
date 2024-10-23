@@ -1,0 +1,10 @@
+.visited-friends-main-div{
+    margin: 0 auto;
+    width: 35%;
+}
+.visited-friends-second-div{
+    background-color: lightgray;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}

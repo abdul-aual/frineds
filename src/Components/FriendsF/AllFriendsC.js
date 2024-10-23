@@ -5,7 +5,14 @@ import { Link } from 'react-router-dom';
 const AllFriendsC = (props) => {
     const { id, name, username, email, address, phone, website, company } = props.allData;
     const handleClick= ()=>{
-console.log('gutaish na');
+        localStorage.setItem('currentClickedFriend', JSON.stringify({id}));
+        let clickedFriends = JSON.parse(localStorage.getItem('visitedFriends')) || [];
+        const frinedExits = clickedFriends.some(friend=>friend.name ===name);
+        if(!frinedExits){
+            clickedFriends.push({name,phone});
+        }
+        localStorage.setItem('visitedFriends', JSON.stringify(clickedFriends));
+        
     }
     return (
         <div className='all-friends-child-main-div'>

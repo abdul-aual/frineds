@@ -5,6 +5,7 @@ import Navbar from './Components/HeaderF/Navbar';
 import AllFriendsM from './Components/FriendsF/AllFriendsM';
 import SingleFriend from './Components/FriendsF/SingleFriend';
 import CurrentFriend from './Components/CurrentF/CurrentFriend';
+import VisitedFriends from './Components/CurrentF/VisitedFriends';
 import {
   BrowserRouter as Router,
   Routes,
@@ -21,6 +22,7 @@ function App() {
         <Route path='/all' element={<AllFriendsM/>} ></Route>
         <Route path='/friends/:name/:id' element={<SingleFriend/>} ></Route>
         <Route path='/current' element={<CurrentFriend/>} ></Route>
+        <Route path='/visited' element={<VisitedFriends/>}></Route>
         </Routes>
       </Router>
 
